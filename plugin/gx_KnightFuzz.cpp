@@ -123,7 +123,7 @@ Gx_KnightFuzz_::Gx_KnightFuzz_() :
   input(NULL),
   KnightFuzz(KnightFuzz::plugin()),
   bypass(0),
-  bypass_(0),
+  bypass_(2),
   needs_ramp_down(false),
   needs_ramp_up(false),
   bypassed(false) {};
