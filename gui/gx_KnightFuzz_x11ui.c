@@ -251,7 +251,7 @@ static LV2UI_Handle instantiate(const LV2UI_Descriptor * descriptor,
 	}
 
 	ui->controls[0] = (gx_controller) {{ 1.0, 1.0, 0.0, 1.0, 1.0},{ 30, 40, 61, 61}, false,"POWER", BSWITCH, BYPASS};
-	ui->controls[1] = (gx_controller) {{ 0.5, 0.5, 0.0, 1.0, 0.01},{ 120, 40, 61, 61}, false,"INPUT", KNOB, INPUT};
+	ui->controls[1] = (gx_controller) {{ 0.5, 0.5, 0.0, 1.0, 0.01},{ 120, 40, 61, 61}, false,"INPUT", KNOB, INPUT_};
 	ui->controls[2] = (gx_controller) {{ 0.5, 0.5, 0.0, 1.0, 0.01},{ 210, 40, 61, 61}, false,"VOLUME", KNOB, VOLUME};
 	ui->block_event = -1;
 
