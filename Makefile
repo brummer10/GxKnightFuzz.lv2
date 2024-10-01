@@ -91,7 +91,7 @@
 	CXXFLAGS += -std=gnu++11 -std=gnu++11 -D_FORTIFY_SOURCE=2 -I. -I./dsp -I./plugin -fPIC -DPIC -O2 -Wall \
 	 -fstack-protector -funroll-loops -ffast-math -fomit-frame-pointer -fstrength-reduce \
 	 -fdata-sections -Wl,--gc-sections $(ABI_CXXFLAGS) $(SSE_CFLAGS) `$(PKGCONFIG) $(PKGCONFIG_FLAGS) --cflags lv2`
-	CFLAGS += -std=gnu++11 -D_FORTIFY_SOURCE=2 -I. -I./dsp -I./plugin -fPIC -DPIC -O2 -Wall \
+	CFLAGS += -D_FORTIFY_SOURCE=2 -I. -I./dsp -I./plugin -fPIC -DPIC -O2 -Wall \
 	 -fstack-protector -funroll-loops -ffast-math -fomit-frame-pointer -fstrength-reduce \
 	 -fdata-sections -Wl,--gc-sections $(ABI_CXXFLAGS) $(SSE_CFLAGS) `$(PKGCONFIG) $(PKGCONFIG_FLAGS) --cflags lv2`
 	LDFLAGS += -I. -shared $(ABI_LDFLAGS) -lm
